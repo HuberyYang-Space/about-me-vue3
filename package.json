@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@10.28.2",
+  "packageManager": "pnpm@11.22.0",
   "description": "about-me 个人主页 vue3版本",
   "author": "Hubery Yang",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint:fix": "eslint --fix",
     "prepare": "husky",
     "commitlint": "commitlint --edit",
     "taze": "npx taze major -r",
@@ -29,48 +29,42 @@
     "release": "npx bumpp"
   },
   "dependencies": {
-    "@vueuse/core": "^14.1.0",
-    "vite-svg-loader": "^5.1.0",
+    "@vueuse/core": "^14.4.0",
+    "vite-svg-loader": "^5.1.1",
     "vue": "3.6.0-beta.5",
-    "vue-router": "^5.0.0"
+    "vue-router": "^5.2.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.2.0",
-    "@commitlint/cli": "^20.3.1",
-    "@commitlint/config-conventional": "^20.3.1",
-    "@huberyyang/todo-scripts": "^1.0.8",
-    "@iconify-json/carbon": "^1.2.18",
-    "@unocss/eslint-plugin": "^66.6.0",
-    "@unocss/preset-wind3": "^66.6.0",
-    "@unocss/reset": "^66.6.0",
-    "@vitejs/plugin-vue": "^6.0.3",
-    "commitizen": "^4.3.1",
-    "cz-git": "^1.12.0",
-    "eslint": "^9.39.2",
-    "eslint-plugin-format": "^1.3.1",
+    "@antfu/eslint-config": "^8.3.0",
+    "@commitlint/cli": "^21.2.2",
+    "@commitlint/config-conventional": "^21.2.2",
+    "@huberyyang/todo-scripts": "^1.1.1",
+    "@iconify-json/carbon": "^1.2.25",
+    "@unocss/eslint-plugin": "^66.8.0",
+    "@unocss/preset-wind3": "^66.8.0",
+    "@unocss/reset": "^66.8.0",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "commitizen": "^4.3.2",
+    "cz-git": "^1.13.2",
+    "eslint": "^10.8.1",
+    "eslint-plugin-format": "^2.0.1",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
-    "typescript": "^5.9.3",
-    "unocss": "^66.6.0",
-    "unplugin-auto-import": "^21.0.0",
-    "unplugin-vue-components": "^31.0.0",
-    "unplugin-vue-router": "^0.19.2",
-    "vite": "beta",
+    "lint-staged": "^17.3.0",
+    "typescript": "^6.0.3",
+    "unocss": "^66.8.0",
+    "unplugin-auto-import": "^21.1.0",
+    "unplugin-vue-components": "^32.1.0",
+    "vite": "8.2.1",
     "vite-plugin-compression": "^0.5.1",
-    "vite-plugin-vue-devtools": "^8.0.5",
-    "vue-tsc": "^3.2.4"
+    "vite-plugin-vue-devtools": "^8.2.1",
+    "vue-tsc": "^3.3.10"
   },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-git"
     }
   },
-  "pnpm": {
-    "overrides": {
-      "vite": "beta"
-    }
-  },
   "lint-staged": {
-    "*": "eslint . --fix"
+    "*": "eslint --fix"
   }
 }
