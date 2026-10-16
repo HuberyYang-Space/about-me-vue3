@@ -7,12 +7,12 @@ const links = [
   },
   {
     title: 'to React',
-    url: 'https://huberyyang.site/',
+    url: 'https://react.huberyyang.site/',
     className: 'react',
   },
   {
     title: 'to Html',
-    url: 'https://huberyyang.site:86/',
+    url: 'https://html.huberyyang.site/',
     className: 'html',
   },
 ]
